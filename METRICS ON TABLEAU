@@ -1,0 +1,54 @@
+## Measure 
+
+1. Revenue = SUM(Revenue Relized) 
+
+2. Total Bookings = COUNT([Booking Id]) 
+
+3. Total Capacity = SUM([Capacity])
+
+4. Total Succesful Bookings = SUM(Total[Successful Bookings]) 
+
+5. Occupancy % = DIV([Total Successfull booking ],[Total Capacity ])
+
+6. Average Rating = AVG(Rating Given)
+
+7. No of days = DATEDIFF('day',MIN(Checkin Date), Max(Checkin Date))
+
+8. Total cancelled bookings = Count(If [Booking Status]='Cancelled' Then [Booking Status] End)
+
+9. Cancellation % = [Total Cancelled ]/[Total booking ]*100  (Total Cancelled booking = Count(Cancelled booking) ; Total booking = Count(Booking ID) )
+
+10.Total Checked Out = COUNT(IF [Booking Status] = 'Checked Out' THEN [Booking Status] END ) 
+
+11. Total no show bookings = COUNT(IF [Booking Status]='No Show' THEN [Booking Status] END ) y
+
+12.No Show rate % = [Total No Show booking]/[Total booking ] 
+
+13."Booking % by Platform = #% Booking by Platfrom
+
+14. Booking % by Room class = #Booking % by Room Class
+
+15. ADR(Average Daily Revenue)= SUM([Revenue])/([Total booking ]) 
+
+16. Realisation % = [Total Checked Out]/[Total booking ] 
+
+17. RevPAR(Revenue Per Available Room) = SUM([Revenue])/SUM([Total Capacity]) 
+
+18.DBRN (Daily Booked Per Room night ) = [Total booking ]/ [No of Days] 
+
+19.DSRN (Daily May Sale Room Night / Theory total may Sale per day =  SUM([Total Capacity])/[No of Days]       ;  (Daily May Sale Room Night / Theory total may Sale per day )
+ 
+20. DURN (Daily Utilized Room Night) = DURN = [Total Checked Out]/[No of Days for Dashboard]
+
+ADR = Average Daily Revenue ;  RevPAR = Revenue Per Available Room ;  DBRN = Daily Booked Per Room night  ;  DSRN = Daily Sale Room Night  ; DURN = Daily Utilized Room Night 
+
+
+
+
+
+
+
+
+
+
+
